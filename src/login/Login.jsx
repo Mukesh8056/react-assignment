@@ -39,8 +39,9 @@ function Login() {
     return (
         <div className="col-md-6 offset-md-3 mt-5">
             <div className="alert alert-info">
-                Username: test<br />
-                Password: test
+                Username: fake@example.com<br />
+                Password: password1<br/>
+                If not logged in remove the localStorage
             </div>
             <div className="card">
                 <h4 className="card-header">Login</h4>

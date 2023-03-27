@@ -18,6 +18,8 @@ function Nav() {
             <div className="navbar-nav">
                 <NavLink to="/" className="nav-item nav-link">Home</NavLink>
                 <button onClick={logout} className="btn btn-link nav-item nav-link">Logout</button>
+                <NavLink to="/card" className="nav-item nav-link">AllCard</NavLink>
+                <NavLink to="/newcard" className="nav-item nav-link">NewCard</NavLink>
             </div>
         </nav>
     );

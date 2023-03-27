@@ -10,6 +10,7 @@ const extraActions = createExtraActions();
 const extraReducers = createExtraReducers();
 const slice = createSlice({ name, initialState, extraReducers });
 
+
 // exports
 
 export const userActions = { ...slice.actions, ...extraActions };
@@ -22,6 +23,8 @@ function createInitialState() {
         users: {}
     }
 }
+
+
 
 function createExtraActions() {
     const baseUrl = `${process.env.REACT_APP_API_URL}/users`;

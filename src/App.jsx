@@ -1,9 +1,11 @@
 import { Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom';
-
+import  AllCard  from "./cards/AllCard";
+import  NewCard  from "./cards/NewCard";
 import { history } from '_helpers';
 import { Nav, PrivateRoute } from '_components';
 import { Home } from 'home';
 import { Login } from 'login';
+// import Login2 from './newlogin/index';
 
 export { App };
 
@@ -27,7 +29,10 @@ function App() {
                         }
                     />
                     <Route path="/login" element={<Login />} />
+                    {/* <Route path="/login" element={<Login2 />} /> */}
                     <Route path="*" element={<Navigate to="/" />} />
+                    <Route path="/newcard" element={<NewCard/>} />
+                    <Route path="/card" element={<AllCard/>} />
                 </Routes>
             </div>
         </div>
